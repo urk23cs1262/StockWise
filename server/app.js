@@ -10,6 +10,7 @@ import adminRouter from "./routes/admin.routes.js";
 import cors from "cors";
 
 const app = express();
+// this is cors section
 app.use(cors({
   origin: ['http://localhost:5173', 'https://stock-wise-urk23cs1262s-projects.vercel.app'],
   credentials: true
@@ -33,4 +34,5 @@ app.listen(PORT, async() => {
 
 
 export default app;
+
 
