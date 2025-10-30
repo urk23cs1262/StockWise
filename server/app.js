@@ -11,7 +11,7 @@ import cors from "cors";
 
 const app = express();
 app.use(cors({
-  origin: ['http://localhost:5173', 'https://stock-wise-wvnj-2p0gmm96n-dineshreddy-13s-projects.vercel.app/'],
+  origin: ['http://localhost:5173', 'https://stock-wise-urk23cs1262s-projects.vercel.app/'],
   credentials: true
 }));
 app.use(express.json())
@@ -30,5 +30,6 @@ app.listen(PORT, async() => {
     console.log(`Server is running on http://localhost:${PORT}`);
     await connectToDatabase();
 })
+
 
 export default app;
